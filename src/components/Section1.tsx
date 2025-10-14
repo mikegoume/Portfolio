@@ -3,7 +3,7 @@ import Enginner from "../assets/images/other/engineer.png";
 
 function Section1() {
   return (
-    <section className="hidden lg:block">
+    <section className="hidden lg:block w-full h-[100vh]">
       <div className="flex flex-col uppercase font-semibold absolute bottom-[15vh] lg:bottom-[20vh] left-8 right-8">
         <div className="overflow-hidden mb-2 lg:mb-0 lg:w-full relative mx-auto lg:mx-0">
           <div className="flex justify-between w-full">
