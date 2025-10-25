@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import AboutSection from "./components/AboutSection";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
+import LoadingScreen from "./components/LoadingScreen";
 import Navbar from "./components/Navbar";
 import Section1 from "./components/Section1";
 import Services from "./components/Services";
@@ -16,17 +18,18 @@ function App() {
 
   return (
     <div className="min-h-screen bg-neutral-100 overflow-y-auto">
-      {/* <LoadingScreen
+      <LoadingScreen
         isLoading={isLoading}
         onFinish={() => setIsLoading(false)}
-      /> */}
+      />
       <Header />
       <Section1 />
-      <div className="w-full h-[100vh]"></div>
+      <div className="w-full h-[100vh]" />
       <AboutSection />
       <Services />
-      <Navbar />
       <TechStack />
+      <Footer />
+      <Navbar />
     </div>
   );
 }
